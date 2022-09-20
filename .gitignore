@@ -1,0 +1,36 @@
+project/project/
+project/target/
+project/metals.sbt
+target/
+.bloop
+.bsp
+.history
+.scala_dependencies
+.cache-main
+*.class
+.metals
+.tasty
+
+### VS Code ###
+.vscode
+
+### Eclipse ###
+build/
+.classpath
+.project
+.settings
+.worksheet
+bin/
+.cache
+
+### IntelliJ IDEA ###
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
+
+### Mac OS ###
+.DS_Store
+
+
