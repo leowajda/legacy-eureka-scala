@@ -3,7 +3,7 @@ package array.recursive
 
 import scala.annotation.tailrec
 
-object LC_0001:
+class LC_0001:
   def twoSum(nums: Array[Int], target: Int): Array[Int] =
     val map = nums.zipWithIndex.toMap
 
