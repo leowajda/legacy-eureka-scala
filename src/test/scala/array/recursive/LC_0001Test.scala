@@ -8,8 +8,10 @@ import array.recursive.LC_0001
 import org.scalatest.Outcome
 
 class LC_0001Test extends AnyFunSuite with Matchers:
+
   trait Solution:
     val solution: LC_0001 = LC_0001()
+
   private def parameters = List(
 
     (Array(2,7,11,15), 9, Array(0,1)),
