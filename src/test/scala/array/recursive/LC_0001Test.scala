@@ -5,6 +5,7 @@ import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.should.*
 import array.recursive.LC_0001
 
+import org.scalatest.Inspectors.forAll
 import org.scalatest.Outcome
 
 class LC_0001Test extends AnyFunSuite with Matchers:
@@ -20,13 +21,15 @@ class LC_0001Test extends AnyFunSuite with Matchers:
 
   )
 
-  test("twoSum") {
-    new Solution:
+  forAll(parameters) { param =>
+    test(s"twoSum => $param") {
+      new Solution:
 
-      for param <- parameters do
         val result = solution.twoSum(param._1, param._2)
         val expected = param._3
 
         result should contain theSameElementsAs expected
 
+    }
   }
+
