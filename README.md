@@ -16,14 +16,10 @@ The following table explains the meaning of commonly used aliases throughout the
 ## :pushpin: Installation
 
 ```shell
-# Clone the repository from GitHub
-$ git clone https://github.com/leowajda/eureka-scala.git
-# Navigate to root directory
-$ cd eureka-scala
-# Launch sbt console
-$ sbt
-# (Optional) Run all the tests
-$ test
+$ git clone https://github.com/leowajda/eureka-scala.git # clone the repository from GitHub
+$ cd eureka-scala                                        # navigate to root directory
+$ sbt                                                    # launch sbt console
+$ test                                                   # (optional) run all the tests
 ```
 
 ## :pencil2: Index
