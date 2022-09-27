@@ -1,4 +1,4 @@
-# :books: eureka-java
+# :books: eureka-scala
 
 ![banner](banner.png "eureka-scala")
 
