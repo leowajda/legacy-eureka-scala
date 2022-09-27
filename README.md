@@ -2,16 +2,8 @@
 
 ![banner](banner.png "eureka-scala")
 
-A curated list of [Scala](https://scala-lang.org/) solutions for problems regarding algorithms and data structures! The project is shipped with a testing environment for learning and experimenting.\
-Tests are written in [ScalaTest](https://www.scalatest.org/) and mocks in [Mockito](https://www.scalatest.org/plus/mockito).\
-The following table explains the meaning of commonly used aliases throughout the project:
-
-|            Alias            |    Solution    |
-|:---------------------------:|:--------------:|
-|       :arrow_up_down:       |   iterative    |
-|  :arrows_counterclockwise:  |   recursive    |
-| :twisted_rightwards_arrows: | multi-threaded |
-
+A curated list of [Scala](https://scala-lang.org/) solutions for problems regarding algorithms and data structures! The project is shipped with a testing environment for learning and experimenting.
+Tests are written in [ScalaTest](https://www.scalatest.org/) and mocks in [Mockito](https://www.scalatest.org/plus/mockito).
 
 ## :pushpin: Installation
 
