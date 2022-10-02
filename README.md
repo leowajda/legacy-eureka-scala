@@ -16,9 +16,10 @@ $ test                                                   # (optional) run all th
 
 ## :pencil2: Index
 
-| ID  |                       Name                        |                                                            Solution                                                            |
-|:---:|:-------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------:|
-|  1  | [Two Sum](https://leetcode.com/problems/two-sum/) | [:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/array/recursive/LC_0001.scala) |
+| ID  |                                         Name                                          |                                                            Solution                                                            |
+|:---:|:-------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------:|
+|  1  |                   [Two Sum](https://leetcode.com/problems/two-sum/)                   | [:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/array/recursive/LC_0001.scala) |
+| 11  | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/array/recursive/LC_0011.scala) |
 
 
 
