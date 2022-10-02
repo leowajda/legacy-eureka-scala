@@ -25,8 +25,8 @@ class LC_0001Test extends AnyFunSuite with Matchers:
     test(s"twoSum => $param") {
       new Solution:
 
-        val result = solution.twoSum(param._1, param._2)
-        val expected = param._3
+        val (nums, target, expected) = param
+        val result = solution.twoSum(nums, target)
 
         result should contain theSameElementsAs expected
 
