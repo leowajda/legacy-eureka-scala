@@ -7,6 +7,7 @@ import scala.math.{max, min}
 
 class LC_0011:
   def area(left: Int, right: Int)(using height : Array[Int]): Int = (right - left) * min(height(left), height(right))
+
   def next(state: (Int, Int))(using height: Array[Int]): (Int, Int) = state match
     case (left, right) if height(left) <= height(right) => (left + 1, right)
     case (left, right)                                  => (left, right - 1)
