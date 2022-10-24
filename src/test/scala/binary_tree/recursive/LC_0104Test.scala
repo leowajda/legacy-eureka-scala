@@ -11,11 +11,7 @@ class LC_0104Test extends AnyFunSuite with Matchers:
 
   trait Solution:
     val solution: LC_0104 = LC_0104()
-
-/**
-   [3,9,20,null,null,15,7]
-   [1,null,2]
- */
+  
   private def parameters = List(
 
     (deserialize(Some(3), Some(9), None, None, Some(15), Some(7)), 3),
