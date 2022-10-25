@@ -22,6 +22,7 @@ $ test                                                   # (optional) run all th
 |  11  |       [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)       |    [:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/array/recursive/LC_0011.scala)    |
 |  69  |                          [Sqrt(x)](https://leetcode.com/problems/sqrtx/)                          |    [:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/array/recursive/LC_0069.scala)    |
 | 104  |    [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)    | [:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/binary_tree/recursive/LC_0104.scala) |
+| 110  |            [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)            | [:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/binary_tree/recursive/LC_0110.scala) |
 | 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/binary_tree/recursive/LC_1448.scala) |
 
 
