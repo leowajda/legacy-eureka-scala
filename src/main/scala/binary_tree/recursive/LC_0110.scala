@@ -3,7 +3,7 @@ package binary_tree.recursive
 
 import binary_tree.{Empty, Node, TreeNode}
 import binary_tree.TreeNode.{deserialize, serialize}
-import scala.math.{abs, cos, max}
+import scala.math.{abs, max}
 
 class LC_0110:
   def isBalanced(root: TreeNode): Boolean =
