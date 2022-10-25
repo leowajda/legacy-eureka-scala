@@ -19,24 +19,23 @@ object TreeNode:
       val next = if list == Nil then prev :+ list else prev
 
       node match
-        case Empty                                                      => next.updated(lvl, None :: list)
-        case Node(root, left, right)                                    => helper(helper(next.updated(lvl, Some(root) :: list), lvl + 1, right), lvl + 1, left)
+        case Empty                   => next.updated(lvl, None :: list)
+        case Node(root, left, right) => helper(helper(next.updated(lvl, Some(root) :: list), lvl + 1, right), lvl + 1, left)
 
     helper(Vector.empty, 0, root).reduce((a,b) => a ::: b).toArray
 
 
   def deserialize(list: Option[Int]*): TreeNode =
 
-    def helper(lvl: Int, pos: Int): TreeNode =
+    def helper(pos: Int): TreeNode =
       if pos >= list.length then
         return Empty
 
       list(pos) match
-        case Some(value) => Node(value, helper(lvl + 1, (lvl * pos) + 1), helper(lvl + 1, (lvl * pos) + 2))
+        case Some(value) => Node(value, helper((pos * 2) + 1), helper((pos * 2) + 2))
         case None        => Empty
 
-    helper(1, 0)
-
+    helper(0)
 
 case class Node(var root: Int, var left: TreeNode = Empty, var right: TreeNode = Empty) extends TreeNode
 case object Empty extends TreeNode
