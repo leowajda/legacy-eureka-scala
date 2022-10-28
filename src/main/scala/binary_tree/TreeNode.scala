@@ -17,7 +17,7 @@ object TreeNode:
     def helper(prev: Vector[List[Option[Int]]], lvl: Int, node: TreeNode): Vector[List[Option[Int]]] =
       val list = if prev.isDefinedAt(lvl) then prev(lvl) else Nil
       val next = if list == Nil then prev :+ list else prev
-
+  
       node match
         case Empty                   => next.updated(lvl, None :: list)
         case Node(root, left, right) => helper(helper(next.updated(lvl, Some(root) :: list), lvl + 1, right), lvl + 1, left)
@@ -25,7 +25,7 @@ object TreeNode:
     helper(Vector.empty, 0, root).reduce((a,b) => a ::: b).toArray
 
 
-  def deserialize(list: Option[Int]*): TreeNode =
+  def levelOrderDeserialize(list: Option[Int]*): TreeNode =
 
     def helper(pos: Int): TreeNode =
       if pos >= list.length then
