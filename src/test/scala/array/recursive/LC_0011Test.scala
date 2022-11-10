@@ -14,12 +14,9 @@ class LC_0011Test extends AnyFunSuite with Matchers:
     val solution: LC_0011 = LC_0011()
 
 
-  private def parameters = List(
-
-    (Array(1,8,6,2,5,4,8,3,7), 49),
-    (Array(1,1), 1)
-
-  )
+  private def parameters = (Array(1,8,6,2,5,4,8,3,7), 49) ::
+                           (Array(1,1), 1)                ::
+                            Nil
 
   forAll(parameters) { param =>
     test(s"maxArea => $param") {

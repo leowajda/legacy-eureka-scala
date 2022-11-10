@@ -12,13 +12,8 @@ class LC_0069Test extends AnyFunSuite with Matchers:
     val solution: LC_0069 = LC_0069()
 
 
-  private def parameters = List(
-
-    (4, 2),
-    (8, 2)
-
-  )
-
+  private def parameters = (4, 2) :: (8, 2) :: Nil
+  
   forAll(parameters) { param =>
     test(s"mySqrt => $param") {
       new Solution:
