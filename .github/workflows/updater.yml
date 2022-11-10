@@ -8,6 +8,6 @@ on:
 
 jobs:
   update-documentation:
-    uses: leowajda/eureka-scraper/.github/workflows/update-documentation.yml@master
+    uses: leowajda/eureka-scraper/.github/workflows/updater.yml@master
     with:
       path-filter: 'src/main/**/*.scala'
