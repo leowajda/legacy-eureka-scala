@@ -1,0 +1,26 @@
+name: Test sbt project
+run-name: ✅ Test sbt project
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test-scala:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: 📦 Checkout
+        uses: actions/checkout@v3
+
+      - name: 📦️ Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'corretto'
+          java-version: '17'
+          cache: 'sbt'
+
+      - name: ✅ Run tests
+        run: sbt test
