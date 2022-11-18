@@ -1,0 +1,13 @@
+name: Update Documentation
+run-name: 🚀 Update /docs and README.md
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  updater:
+    uses: leowajda/eureka/.github/workflows/update-eureka.yml@master
+    with:
+      path-filter: 'src/main/**/*.scala'
