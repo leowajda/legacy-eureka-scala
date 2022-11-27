@@ -7,7 +7,7 @@ import math.max
 
 class LC_0104:
   def maxDepth(root: TreeNode): Int = root match
-      case node: Node => max(maxDepth(node.left), maxDepth(node.right)) + 1
+      case node: Node => 1 + max(maxDepth(node.left), maxDepth(node.right))
       case Empty      => 0
 
 
