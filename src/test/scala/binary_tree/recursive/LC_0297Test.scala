@@ -1,26 +1,30 @@
 package com.eureka
 package binary_tree.recursive
 
-import binary_tree.TreeNode.levelOrderDeserialize
 import org.scalatest.funsuite.AnyFunSuite
-import org.scalatest.matchers.should.*
-import org.scalatest.Inspectors.forAll
+import org.scalatest.matchers.should.Matchers.shouldEqual
+import org.scalatest.prop.TableDrivenPropertyChecks.{Table, forAll}
 
-class LC_0297Test extends AnyFunSuite with Matchers:
+import binary_tree.TreeNode.levelOrderDeserialize
+
+class LC_0297Test extends AnyFunSuite:
 
   trait Codec:
     val codec: LC_0297 = LC_0297()
 
+  private def parameters = Table(
+    "root",
+    levelOrderDeserialize(Some(1
 
-  private def parameters = levelOrderDeserialize(Some(1), Some(2), Some(3), None, None, Some(4), Some(5)) ::
-                           levelOrderDeserialize()                                                        ::
-                           Nil
 
-  forAll(parameters) { param =>
-    test(s"serialize/deserialize => $param") {
+), Some(2), Some(3), None, None, Some(4), Some(5)),
+    levelOrderDeserialize()
+  )
+
+  forAll(parameters) { root =>
       new Codec:
-        val result = codec.deserialize(codec.serialize(param))
-        result shouldEqual param
-    }
+        
+        val result = codec.deserialize(codec.serialize(root))
+        result shouldEqual root
   }
 
