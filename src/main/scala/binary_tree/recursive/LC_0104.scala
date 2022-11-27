@@ -2,6 +2,7 @@ package com.eureka
 package binary_tree.recursive
 
 import binary_tree.{Empty, Node, TreeNode}
+
 import math.max
 
 class LC_0104:
