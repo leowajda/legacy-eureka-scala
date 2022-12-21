@@ -10,4 +10,5 @@ ID,Name,Scala
 213,[House Robber II](https://leetcode.com/problems/house-robber-ii/),[:arrow_up_down:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/array/iterative/LC_0213.scala)
 297,[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/),[:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/binary_tree/recursive/LC_0297.scala)
 739,[Daily Temperatures](https://leetcode.com/problems/daily-temperatures/),[:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/array/recursive/LC_0739.scala)
+841,[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/),[:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/graph/recursive/LC_0841.scala)
 1448,[Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/),[:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/binary_tree/recursive/LC_1448.scala)
