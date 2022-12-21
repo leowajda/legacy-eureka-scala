@@ -12,9 +12,9 @@ class LC_0198Test extends AnyFunSuite:
 
   private def parameters = Table(
     ("nums",               "expected"),
-    (Array(1, 2, 3, 1),            4),
+    (Array(1, 2, 3, 1),             4),
     (Array(2, 7, 9, 3, 1),         12),
-    (Array(2, 1, 1, 2),            4)
+    (Array(2, 1, 1, 2),             4)
   )
   
   forAll(parameters) { (nums, expected) =>

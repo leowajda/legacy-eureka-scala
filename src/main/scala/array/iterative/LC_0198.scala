@@ -5,5 +5,5 @@ import math.max
 
 class LC_0198:
   def rob(nums: Array[Int]): Int = nums.foldLeft((0, 0)) {
-    case ((a, b), c) => (b, max(b, a + c))
+    case ((prev, res), house) => (res, res max prev + house)
   }._2

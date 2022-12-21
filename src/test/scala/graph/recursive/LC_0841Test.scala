@@ -11,8 +11,8 @@ class LC_0841Test extends AnyFunSuite:
     val solution: LC_0841 = LC_0841()
 
   private def parameters = Table(
-    ("rooms",                                                              "expected"),
-    ((1 :: Nil) :: (2 :: Nil) :: (3 :: Nil) :: Nil :: Nil,                       true),
+    ("rooms",                                                               "expected"),
+    ((1 :: Nil) :: (2 :: Nil) :: (3 :: Nil) :: Nil :: Nil,                        true),
     ((1 :: 3 :: Nil) :: (3 :: 0 :: 1 :: Nil) :: (2 :: Nil) :: (0 :: Nil) :: Nil, false)
   )
 

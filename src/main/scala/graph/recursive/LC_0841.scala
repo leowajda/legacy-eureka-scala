@@ -12,4 +12,3 @@ class LC_0841:
       case Nil          => set
 
     helper(rooms.head, Set(0), rooms.toIndexedSeq).size == rooms.size
-

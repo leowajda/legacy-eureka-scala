@@ -5,17 +5,14 @@ import scala.annotation.tailrec
 
 class LC_0001:
   def twoSum(nums: Array[Int], target: Int): Array[Int] =
-    val map = nums.zipWithIndex.toMap
 
     @tailrec
-    def helper(pos: Int): Array[Int] =
-      val complement = target - nums(pos)
-
-      map.get(complement) match
+    def helper(pos: Int = 0, map: Map[Int, Int]): Array[Int] =
+      map.get(target - nums(pos)) match
         case Some(value) if value != pos  => Array(value, pos)
-        case _                            => helper(pos + 1)
+        case _                            => helper(pos + 1, map)
 
-    helper(0)
+    helper(map = nums.zipWithIndex.toMap)
 
 
 

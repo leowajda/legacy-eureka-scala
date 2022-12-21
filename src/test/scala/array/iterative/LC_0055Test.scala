@@ -12,7 +12,7 @@ class LC_0055Test extends AnyFunSuite:
 
   private def parameters = Table(
     ("nums",               "expected"),
-    (Array(2, 3, 1, 1, 4),      true),
+    (Array(2, 3, 1, 1, 4),       true),
     (Array(3, 2, 1, 0, 4),      false)
   )
 

@@ -14,8 +14,8 @@ class LC_0104Test extends AnyFunSuite:
   
   private def parameters = Table(
     ("root",                                                                "expected"),
-    (levelOrderDeserialize(Some(3), Some(9), None, None, Some(15), Some(7)),        3),
-    (levelOrderDeserialize(Some(1), None, Some(2)),                                 2)
+    (levelOrderDeserialize(Some(3), Some(9), None, None, Some(15), Some(7)),         3),
+    (levelOrderDeserialize(Some(1), None, Some(2)),                                  2)
   )
 
   forAll(parameters) { (root, expected) =>

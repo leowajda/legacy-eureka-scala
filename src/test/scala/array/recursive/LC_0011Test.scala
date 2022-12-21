@@ -12,13 +12,13 @@ class LC_0011Test extends AnyFunSuite:
 
   private def parameters = Table(
     ("height",                 "expected"),
-    (Array(1,8,6,2,5,4,8,3,7),        49),
-    (Array(1,1),                       1)
+    (Array(1,8,6,2,5,4,8,3,7),         49),
+    (Array(1,1),                        1)
   )
 
   forAll(parameters) { (height, expected) =>
       new Solution:
-        
+
         val result = solution.maxArea(height)
         result shouldBe expected
   }

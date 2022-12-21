@@ -12,8 +12,8 @@ class LC_0069Test extends AnyFunSuite:
   
   private def parameters = Table(
     ("x","expected"),
-    (4,          2),
-    (8,          2)
+    (4,           2),
+    (8,           2)
   )
   
   forAll(parameters) { (x, expected) =>
