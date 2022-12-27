@@ -3,7 +3,7 @@ package binary_tree.recursive
 
 import binary_tree.{Empty, Node, TreeNode}
 
-import Math.max
+import scala.math.max
 
 class LC_1448:
   def goodNodes(root: TreeNode): Int =

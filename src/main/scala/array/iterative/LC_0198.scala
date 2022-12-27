@@ -1,7 +1,7 @@
 package com.eureka
 package array.iterative
 
-import math.max
+import scala.math.max
 
 class LC_0198:
   def rob(nums: Array[Int]): Int = nums.foldLeft((0, 0)) {

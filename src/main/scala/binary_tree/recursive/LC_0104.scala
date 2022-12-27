@@ -3,7 +3,7 @@ package binary_tree.recursive
 
 import binary_tree.{Empty, Node, TreeNode}
 
-import math.max
+import scala.math.max
 
 class LC_0104:
   def maxDepth(root: TreeNode): Int = root match
