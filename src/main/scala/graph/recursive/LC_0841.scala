@@ -2,6 +2,7 @@ package com.eureka
 package graph.recursive
 
 import scala.annotation.tailrec
+import scala.collection.immutable.BitSet
 
 class LC_0841:
   def canVisitAllRooms(rooms: List[List[Int]]): Boolean =
@@ -11,4 +12,4 @@ class LC_0841:
       case head :: next => helper(seq(head).filterNot(set.contains) ++: next, set + head, seq)
       case Nil          => set
 
-    helper(rooms.head, Set(0), rooms.toIndexedSeq).size == rooms.size
+    helper(rooms.head, BitSet(0), rooms.toIndexedSeq).size == rooms.size
