@@ -9,7 +9,9 @@ $ sbt                                                    # launch sbt console
 $ test                                                   # (optional) run all the tests
 ```
 
-## :books: Index|  ID  |                                                     Name                                                      |                                                                Scala                                                                 |
+## :books: Index
+
+|  ID  |                                                     Name                                                      |                                                                Scala                                                                 |
 |:----:|:-------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------:|
 |  1   |                               [Two Sum](https://leetcode.com/problems/two-sum/)                               |    [:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/array/recursive/LC_0001.scala)    |
 |  11  |             [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)             |    [:arrows_counterclockwise:](https://github.com/leowajda/eureka-scala/blob/master/src/main/scala/array/recursive/LC_0011.scala)    |
