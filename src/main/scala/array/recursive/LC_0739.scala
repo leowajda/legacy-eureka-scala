@@ -9,9 +9,9 @@ class LC_0739:
 
     @tailrec
     def helper(pos: Int, stack: List[Int], seq: IndexedSeq[Int]): Array[Int] = pos match
-      case pos if pos == temperatures.length   => seq.toArray
-      case _                                   => stack match
+      case pos if pos != temperatures.length => stack match
         case head :: next if temperatures(pos) > temperatures(head) => helper(pos, next, seq.updated(head, pos - head))
         case prevStack                                              => helper(pos + 1, pos :: prevStack, seq)
-
+      case _                                 => seq.toArray
+    
     helper(0, Nil, Vector.fill(temperatures.length) { 0 })

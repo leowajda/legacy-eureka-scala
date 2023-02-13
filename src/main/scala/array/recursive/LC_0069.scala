@@ -8,12 +8,10 @@ class LC_0069:
 
     @tailrec
     def helper(left: Long, right: Long, guess: Long): Int = left > right match
+      case false  => left + (right - left) / 2 match
+        case middle if middle * middle <= x => helper(middle + 1, right, middle)
+        case middle                         => helper(left, middle - 1, guess)
       case true  => guess.toInt
-      case _     =>
-        val middle = left + (right - left) / 2
-        middle * middle <= x match
-          case true  => helper(middle + 1, right, middle)
-          case _     => helper(left, middle - 1, guess)
 
     helper(0, x, -1)
 

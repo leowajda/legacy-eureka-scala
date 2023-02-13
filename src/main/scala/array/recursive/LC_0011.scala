@@ -12,10 +12,12 @@ class LC_0011:
 
     @tailrec
     def helper(left: Int, right: Int, result: Int = Int.MinValue): Int = left >= right match
-      case true => result
-      case _    => height(left) <= height(right) match
-        case true => helper(left + 1, right, result max area(left, right))
-        case _    => helper(left, right - 1, result max area(left, right))
+      case false => height(left) <= height(right) match
+        case true  => helper(left + 1, right, result max area(left, right))
+        case false => helper(left, right - 1, result max area(left, right)) 
+      case true  => result
+      
+
 
 
     helper(0, height.length - 1)
