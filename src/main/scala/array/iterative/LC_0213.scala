@@ -4,11 +4,12 @@ package array.iterative
 import scala.math.max
 
 class LC_0213:
-  def rob(nums: Array[Int]): Int =
-    def helper(nums: Array[Int]): Int = nums.foldLeft((0, 0)) {
-      case ((prev, res), house) => (res, res max prev + house)
-    }._2
-    
-    nums.length match { case 1 => nums(0) case _ => helper(nums.tail) max helper(nums.reverse.tail) }
+  def rob(nums: Array[Int]): Int = 
+
+    def helper(houses: Array[Int]): Int = houses.foldLeft((0, 0)) {
+      case ((maxRobbery, prevRobbery), house) => (maxRobbery max (prevRobbery + house), maxRobbery)
+    }._1
+
+    List(nums(0), helper(nums.tail), helper(nums.reverse.tail)).max
 
 
